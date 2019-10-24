@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Software License Agreement (BSD License)
+
 import rospy
 import sys, select, termios, tty
 from adafruit_motorkit import MotorKit

@@ -1,0 +1,4 @@
+<launch>
+    <node name="uwb_setting" pkg="ultra_wideband" type="uwb_setting.py" />
+    <node name="Get_data" pkg="ultra_wideband" type="get_data.py" />
+</launch>

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import rospy
 import threading, queue
 from std_msgs.msg import String

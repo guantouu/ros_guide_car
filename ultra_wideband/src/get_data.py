@@ -1,3 +1,5 @@
+#!/usr/bin/env python3 
+
 from pypozyx import (PozyxConstants, PozyxSerial, Coordinates, 
                     EulerAngles, get_first_pozyx_serial_port)
 import rospy

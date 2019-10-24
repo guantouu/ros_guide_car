@@ -1,3 +1,5 @@
+#!/usr/bin/env python3 
+
 from pypozyx import (PozyxConstants, get_first_pozyx_serial_port, PozyxSerial,
                      DeviceCoordinates, Coordinates, POZYX_POS_ALG_UWB_ONLY, POZYX_2D,
                      POZYX_SUCCESS, version,  get_first_pozyx_serial_port, SingleRegister,
@@ -67,6 +69,7 @@ class uwbProcessing():
         return status
 
 if __name__ == "__main__":
+    rospy.init_node('uwb_setting')
     serial_port = get_first_pozyx_serial_port()
     if serial_port is None:
         print("No Pozyx connected. Check your USB cable or your driver!")

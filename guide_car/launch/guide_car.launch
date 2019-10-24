@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find ultra_wideband)/launch/uwb.launch" />
+    <node name="Motor" pkg="guide_car" type="move.py"/>
+</launch>
